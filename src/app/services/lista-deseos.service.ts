@@ -8,7 +8,6 @@ export class ListaDeseosService {
 
     constructor(){
         this.cargarData();
-        console.log("servicio inicializado...");
     }
 
     actualizarData(){
@@ -24,6 +23,11 @@ export class ListaDeseosService {
 
     agregarLista( lista:Lista ){
         this.listas.push(lista);
+        this.actualizarData();
+    }
+
+    eliminarLista( idx: number ){
+        this.listas.splice(idx,1);
         this.actualizarData();
     }
 }

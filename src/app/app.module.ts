@@ -8,6 +8,7 @@ import { ListaDeseosService } from "./services/lista-deseos.service";
 
 // pipes
 import { PlaceHolderPipe } from './pipes/placeholder.pipe';
+import { PendientesPipe } from './pipes/pendientes.pipe';
 
 // componentes
 import { TabsPage } from '../pages/tabs/tabs';
@@ -21,6 +22,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 
 
+
 @NgModule({
   declarations: [
     MyApp,
@@ -30,6 +32,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AgregarComponent,
     DetalleComponent,
     PlaceHolderPipe,
+    PendientesPipe
   ],
   imports: [
     BrowserModule,
